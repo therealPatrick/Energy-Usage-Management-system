@@ -10,7 +10,7 @@ A complete CRUD (Create, Read, Update, Delete) application for managing customer
 - ✅ **Delete records** - Remove usage records with confirmation
 - ✅ **Modern UI** - Beautiful, responsive design with smooth animations
 - ✅ **Real-time feedback** - Success/error messages and loading states
-- ✅ **Mobile responsive** - Works perfectly on all device sizes
+
 
 ## Tech Stack
 
