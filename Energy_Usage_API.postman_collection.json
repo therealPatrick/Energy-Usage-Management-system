@@ -1,0 +1,163 @@
+{
+    "info": {
+        "_postman_id": "energy-usage-api-collection",
+        "name": "Energy Usage Management API",
+        "description": "Complete CRUD API for managing customer energy usage records",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get All Usage Records",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{base_url}}/api/usage",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "usage"
+                    ]
+                },
+                "description": "Retrieve all energy usage records"
+            },
+            "response": []
+        },
+        {
+            "name": "Get Single Usage Record",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{base_url}}/api/usage/1",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "usage",
+                        "1"
+                    ]
+                },
+                "description": "Retrieve a specific usage record by ID"
+            },
+            "response": []
+        },
+        {
+            "name": "Create New Usage Record",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"customer_id\": \"CUST001\",\n  \"kwh_used\": 150.5\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/api/usage",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "usage"
+                    ]
+                },
+                "description": "Create a new energy usage record"
+            },
+            "response": []
+        },
+        {
+            "name": "Update Usage Record",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"customer_id\": \"CUST001\",\n  \"kwh_used\": 175.2\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{base_url}}/api/usage/1",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "usage",
+                        "1"
+                    ]
+                },
+                "description": "Update an existing usage record"
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Usage Record",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "{{base_url}}/api/usage/1",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "usage",
+                        "1"
+                    ]
+                },
+                "description": "Delete a usage record by ID"
+            },
+            "response": []
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http://localhost:3000",
+            "type": "string"
+        }
+    ]
+}
