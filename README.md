@@ -287,16 +287,6 @@ The application includes comprehensive error handling:
 4. Test thoroughly
 5. Submit a pull request
 
-## License
 
-MIT License - see LICENSE file for details
-
-## Support
-
-For issues and questions:
-- Create an issue in the GitHub repository
-- Contact: [your-email@example.com]
-
----
 
 **Built with ❤️ using Node.js, Express, and modern web technologies** 
